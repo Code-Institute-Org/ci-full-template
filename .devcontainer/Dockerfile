@@ -27,6 +27,8 @@ RUN set -ex \
     && python3 -m pip install --no-cache-dir --upgrade pip \
     && python3 -m pip install --no-cache-dir --upgrade setuptools wheel virtualenv pipenv pylint rope flake8  mypy autopep8 pep8 pylama pydocstyle bandit notebook twine
 
+ENV PATH=$PATH:"/home/codeany/.local/bin"
+
 RUN echo 'alias python=python3' >> ~/.bashrc && \
     echo 'export PIP_USER=yes' >> ~/.bashrc && \
     echo 'alias pip=pip3' >> ~/.bashrc && \
