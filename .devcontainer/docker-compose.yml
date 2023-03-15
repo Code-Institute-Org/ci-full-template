@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "/tmp/postgres/socket:/var/run/postgresql"
+ 
+  psql:
+    image: postgres:11.9
+    environment:
+      - POSTGRES_PASSWORD=pass1234
+      - POSTGRES_USER=codeany
+      - POSTGRES_DB=mydb
+    network_mode: service:app
+    volumes:
+      - "/tmp/postgres/socket:/var/run/postgresql"
