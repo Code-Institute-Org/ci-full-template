@@ -10,7 +10,7 @@
         "ms-python.python",
         "formulahendry.auto-close-tag",
         "eventyret.bootstrap-4-cdn-snippet",
-        "hookyqr.beautify",
+        "esbenp.prettier-vscode",
         "matt-rudge.auto-open-preview-panel",
         "ms-toolsai.jupyter",
         "ms-toolsai.jupyter-keymap",
@@ -31,7 +31,7 @@
           "**/core.mongo*": true,
           "**/core.python*": true
         },
-        "editor.defaultFormatter": "HookyQR.beautify",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "python.linting.pycodestyleEnabled": true,
         "python.terminal.activateEnvironment": false,
         "workbench.iconTheme": "none"
