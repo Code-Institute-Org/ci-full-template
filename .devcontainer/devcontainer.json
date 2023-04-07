@@ -16,7 +16,8 @@
         "ms-toolsai.jupyter-keymap",
         "ms-toolsai.jupyter-renderers",
         "bierner.markdown-preview-github-styles",
-        "jabacchetta.vscode-essentials"
+        "gydunhn.vsc-essentials-core"
+
       ],
       "settings": {
         "files.exclude": {
