@@ -36,7 +36,7 @@
         "editor.defaultFormatter":"esbenp.prettier-vscode",
         "python.linting.pycodestyleEnabled":true,
         "python.terminal.activateEnvironment":false,
-        "workbench.iconTheme":"null",
+        "workbench.iconTheme":"None",
         "extensions.ignoreRecommendations":true,
         "editor.tabCompletion":"on",
         "editor.showDeprecated":true,
