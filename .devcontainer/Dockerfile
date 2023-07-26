@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-ENV PYTHON_VERSION 3.8.12
+ENV PYTHON_VERSION 3.9.17
 ENV DEBIAN_FRONTEND=noninteractive
 #Set of all dependencies needed for pyenv to work on Ubuntu
 RUN apt-get update \ 

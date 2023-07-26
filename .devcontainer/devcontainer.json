@@ -79,7 +79,7 @@
            "editor.defaultFormatter":"vscode.css-language-features"
         },
         "[html]":{
-           "editor.defaultFormatter":"vscode.html-language-features"
+           "editor.defaultFormatter":"esbenp.prettier-vscode"
         },
         "javascript.format.enable":true,
         "javascript.format.semicolons":"insert",
