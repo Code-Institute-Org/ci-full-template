@@ -11,7 +11,7 @@ services:
     image: postgres:11.9
     environment:
       - POSTGRES_DB=mydb
-      - POSTGRES_USER=codeany
+      - POSTGRES_USER=ci-student
       - POSTGRES_PASSWORD=pass1234
     network_mode: service:app
     volumes:
