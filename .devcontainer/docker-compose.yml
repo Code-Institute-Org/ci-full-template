@@ -1,9 +1,7 @@
 version: '3'
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: public.ecr.aws/m5f1e7g7/ci-project-templates-full:version1.0
     volumes:
       - "/tmp/postgres/socket:/var/run/postgresql"
  
