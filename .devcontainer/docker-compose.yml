@@ -8,10 +8,10 @@ services:
       - "/tmp/postgres/socket:/var/run/postgresql"
  
   psql:
-    image: postgres:11.9
+    image: postgres:12
     environment:
-      - POSTGRES_DB=mydb
-      - POSTGRES_USER=codeany
+      - POSTGRES_DB=cistudent
+      - POSTGRES_USER=cistudent
       - POSTGRES_PASSWORD=pass1234
     network_mode: service:app
     volumes:
