@@ -13,7 +13,7 @@ RUN mkdir -p /etc/apt/keyrings && \
     echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list  && \
     apt-get update && apt-get install nodejs -y
 
-ARG USERNAME=codeany
+ARG USERNAME=cistudent
 RUN useradd -ms /bin/bash $USERNAME
 USER $USERNAME
 WORKDIR /home/$USERNAME
@@ -32,12 +32,11 @@ RUN set -ex \
     && python3 -m pip install --no-cache-dir --upgrade pip \
     && python3 -m pip install --no-cache-dir --upgrade setuptools wheel virtualenv pipenv pylint rope flake8  mypy autopep8 pep8 pylama pydocstyle bandit notebook twine
 
-ENV PATH=$PATH:"/home/codeany/.local/bin"
+ENV PATH=$PATH:"/home/cistudent/.local/bin"
 
 RUN echo 'alias python=python3' >> ~/.bashrc && \
     echo 'export PIP_USER=yes' >> ~/.bashrc && \
-    echo 'alias pip=pip3' >> ~/.bashrc && \
-    echo 'alias psql="psql mydb"' >>  ~/.bashrc
+    echo 'alias pip=pip3' >> ~/.bashrc
 
 COPY ./build-assets/heroku_config.sh /home/$USERNAME/.theia/heroku_config.sh
 RUN echo 'alias heroku_config=". $HOME/.theia/heroku_config.sh"' >> ~/.bashrc
