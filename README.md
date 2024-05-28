@@ -4,7 +4,7 @@ Welcome USER_NAME,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
+You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 28, 2024**
 
 ## Gitpod Reminders
 
@@ -39,6 +39,8 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ## Release History
 
 We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+
+**May 28 2024:** Remove mongo build
 
 **April 26 2024:** Update node version to 16
 
