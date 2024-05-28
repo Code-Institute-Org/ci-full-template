@@ -40,7 +40,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**May 28 2024:** Remove mongo build
+**May 28 2024:** Fix Mongo and Links installs
 
 **April 26 2024:** Update node version to 16
 
