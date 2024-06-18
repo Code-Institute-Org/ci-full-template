@@ -4,7 +4,7 @@ Welcome USER_NAME,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 14, 2024**
+You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
 
 ## Gitpod Reminders
 
@@ -34,13 +34,28 @@ To log into the Heroku toolbelt CLI:
 
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
 
+### Connecting your Mongo database
+
+- **Connect to Mongo CLI on a IDE**
+- navigate to your MongoDB Clusters Sandbox
+- click **"Connect"** button
+- select **"Connect with the MongoDB shell"**
+- select **"I have the mongo shell installed"**
+- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
+- choose option: **"Run your connection string in your command line"**
+- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
+  - replace all `<angle-bracket>` keys with your own data
+- enter password _(will not echo **\*\*\*\*** on screen)_
+
 ------
 
 ## Release History
 
 We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**June 14, 2024,** Temporarily remove Mongo until key issue is resolved
+**June 18, 2024,** Add Mongo back into template
+
+**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
 
 **May 28 2024:** Fix Mongo and Links installs
 
